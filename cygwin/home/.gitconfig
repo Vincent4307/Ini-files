@@ -1,0 +1,12 @@
+[core]
+	quotepath = false
+[user]
+	name = Vincent4307
+	email = 3205027978@qq.com
+[color]
+	ui = true
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch

@@ -1,0 +1,4 @@
+git config --system core.fileMode false
+
+git system config file stored at /etc/gitconfig
+

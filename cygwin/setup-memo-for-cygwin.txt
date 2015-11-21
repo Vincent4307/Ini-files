@@ -1,0 +1,25 @@
+1,use setup.exe to setup cygwin
+2,use internet to install
+3,input http://mirrors.163.com/cygwin/ in the url and press add
+4,in the package manager install git vim at least
+	1,search for git or vim
+	2,click the default after del or editor 
+	  untill the default change to install
+5,wait and success
+
+config the bash and git
+1, set the windows home path to /cygwin/home
+2, git clone the config file 
+3, copy to /home
+4, start cygwin terminal, almost there
+5, git config --system core.fileMode false
+6, to avoid the conflict of windows gvim and cygwin vim, you need
+   copy _vimrc to the home path
+7, done
+
+what is configured in the config file
+1, in .bashrc ; uncomment some alias to enable fast input and color 
+2, in .inputrc ; uncomment  completion-ignore-case to enable caseignore
+3, in .gitconfig; set the user, email, alias and so on
+4, in .mintty; to set 
+
