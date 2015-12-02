@@ -1,0 +1,2 @@
+1, where to store vimrc /usr/share/vim
+2, where to git clone vundle ~/.vim/bundle/vundle
