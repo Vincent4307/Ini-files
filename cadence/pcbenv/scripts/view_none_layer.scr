@@ -1,0 +1,17 @@
+# Allegro script
+#	file: E:/Toplayout/Work/ViewTran/VAC362A_V1_1/LIB/view_all_layer.scr
+#	start time: Tue Dec 11 14:23:38 2007
+#	Version: 15.51 s078 (v15-5.1-43DK) i86
+scriptmode +invisible
+version 15.51
+
+setwindow pcb
+color 
+setwindow form.cvf_main
+FORM cvf_main class_list Geometry
+FORM cvf_main global_vis All Invisible 
+fillin yes 
+FORM cvf_main ok  
+setwindow pcb
+
+#	stop time: Tue Dec 11 14:23:48 2007

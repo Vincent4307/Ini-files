@@ -1,0 +1,36 @@
+# Allegro script
+#	file: E:/Design/LIB/Temp/111.scr
+#	start time: Fri Dec 19 14:26:20 2008
+#	Version: 15.51 s078 (v15-5.1-43DK) i86
+version 15.51
+
+setwindow pcb
+trapsize 302
+done 
+define text 
+setwindow form.textblock
+FORM textblock 10 width 0.5080 
+FORM textblock 10 height 0.7620 
+FORM textblock 10 line_spacing 0.9906 
+FORM textblock 10 photoplot_width 0.3810 
+FORM textblock 10 character_spacing 0.0254 
+FORM textblock done  
+setwindow pcb
+define grid 
+setwindow form.grid
+FORM grid non_etch non_etch_x_grids 0.1 
+FORM grid non_etch non_etch_y_grids 0.1 
+FORM grid all_etch all_etch_x_grids 0.1 
+FORM grid all_etch all_etch_y_grids 0.1 
+FORM grid done 
+setwindow pcb
+add text 
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY 
+FORM mini subclass SILKSCREEN_TOP 
+FORM mini text_marker_size 1.2700 
+FORM mini text_block 10 
+FORM mini text_justification Center
+setwindow pcb
+
+#	stop time: Fri Dec 19 14:27:03 2008

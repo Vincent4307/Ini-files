@@ -1,0 +1,21 @@
+# Allegro script
+#	file: E:/Toplayout/Work/ViewTran/VAC362A_V1_1/LIB/add_silkline.scr
+#	start time: Tue Dec 11 14:19:37 2007
+#	Version: 15.51 s078 (v15-5.1-43DK) i86
+scriptmode +invisible
+version 15.51
+
+setwindow pcb
+
+add line 
+setwindow form.mini
+FORM mini class PACKAGE GEOMETRY 
+FORM mini subclass SILKSCREEN_TOP 
+FORM mini lock_mode Line 
+FORM mini lock_direction 45 
+FORM mini line_width 6.00 
+FORM mini line_font_id Solid 
+setwindow pcb
+
+
+#	stop time: Tue Dec 11 14:20:27 2007

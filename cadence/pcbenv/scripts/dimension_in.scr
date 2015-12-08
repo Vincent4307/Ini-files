@@ -1,0 +1,17 @@
+# Allegro script
+#	file: E:/Design/LIB/Temp/dimension_in.scr
+#	start time: Fri Nov 18 13:53:18 2011
+#	Version: 15.51 s078 (v15-5.1-43DK) i86
+scriptmode +invisible
+version 15.51
+
+setwindow pcb
+trapsize 1914
+dimension linear 
+setwindow form.mini
+FORM mini class BOARD GEOMETRY 
+FORM mini subclass DIMENSION 
+setwindow pcb
+
+
+#	stop time: Fri Nov 18 13:53:56 2011

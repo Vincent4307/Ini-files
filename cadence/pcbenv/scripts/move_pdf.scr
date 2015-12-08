@@ -1,0 +1,18 @@
+# Allegro script
+#	file: E:/Toplayout/Work/Winhap/WICS/PCB/0711/move_pdf.scr
+#	start time: Wed Jul 11 14:57:33 2007
+#	Version: 15.51 s077 (v15-5.1-43DD) i86
+scriptmode +invisible
+version 15.51
+
+setwindow pcb
+trapsize 827736
+move 
+setwindow form.find
+FORM find name_type Symbol (or Pin) 
+FORM find find_list List 
+FORM find find_name 1.txt 
+FORM find find_list Name 
+setwindow pcb
+
+#	stop time: Wed Jul 11 14:57:47 2007

@@ -1,0 +1,12 @@
+# Allegro script
+#	file: E:/Toplayout/Work/Winhap/WICS/PCB/0711/rup.scr
+#	start time: Wed Jul 11 14:55:10 2007
+#	Version: 15.51 s077 (v15-5.1-43DD) i86
+scriptmode +invisible
+version 15.51
+
+setwindow pcb
+trapsize 827736
+reports "Unconnected Pins Report"
+
+#	stop time: Wed Jul 11 14:55:22 2007

@@ -1,0 +1,14 @@
+# Allegro script
+#	file: E:/Toplayout/Work/ViewTran/VAC362A_V1_1/LIB/create_device.scr
+#	start time: Tue Dec 11 14:41:47 2007
+#	Version: 15.51 s078 (v15-5.1-43DK) i86
+scriptmode +invisible
+version 15.51
+
+setwindow pcb
+create device 
+setwindow form.crdevice
+FORM crdevice done  
+setwindow pcb
+
+#	stop time: Tue Dec 11 14:41:57 2007

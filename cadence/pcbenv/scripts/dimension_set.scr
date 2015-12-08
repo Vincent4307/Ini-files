@@ -1,0 +1,26 @@
+scriptmode +invisible
+
+setwindow pcb
+trapsize 1914
+draft param 
+setwindow form.draft_parms
+FORM draft_parms ansi_standard YES 
+FORM draft_parms text  
+FORM draft_parms text_block 8 
+FORM draft_parms leading_zero YES 
+FORM draft_parms align_text YES 
+FORM draft_parms dual_dimensions YES 
+FORM draft_parms second_accuracy 2 
+FORM draft_parms lines
+FORM draft_parms arrow_type Open 
+FORM draft_parms arrow_length '0.100 IN' 
+FORM draft_parms arrow_width '0.050 IN' 
+FORM draft_parms done  
+setwindow pcb
+dimension linear 
+setwindow form.mini
+FORM mini class BOARD GEOMETRY 
+FORM mini subclass DIMENSION 
+setwindow pcb
+
+#	stop time: Fri Nov 18 13:52:59 2011

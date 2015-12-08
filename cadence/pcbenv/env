@@ -1,0 +1,130 @@
+source $TELENV
+alias a alias
+
+# NEW STYLE FUNCTION KEY ALIASES
+# F1 is normally reserved by the system for Help so we don't use it
+
+
+funckey 8 FORM mini acon_line_width 8
+funckey 9 FORM mini acon_line_width 9
+funckey 1 FORM mini acon_line_width 10
+funckey 2 FORM mini acon_line_width 12
+funckey 3 FORM mini acon_line_width 15
+funckey 4 FORM mini acon_line_width 20
+funckey 5 FORM mini acon_line_width 25
+funckey 6 FORM mini acon_line_width 30
+funckey 7 FORM mini acon_line_width 40
+funckey 0 FORM mini acon_line_width 50
+
+funckey g define grid 
+funckey G define grid 
+funckey H assign color
+funckey h assign color
+funckey DH dehilight
+funckey dh dehilight
+
+funckey Esc done
+
+
+
+
+funckey MI mirror
+funckey mi mirror
+funckey mv move
+funckey ms shape merge shapes
+funckey MS shape merge shapes
+
+funckey s slide
+funckey n next
+funckey c change
+
+funckey df draft fillet
+funckey DF draft fillet
+
+funckey wd waive drc
+funckey do status
+funckey DO status
+
+funckey " " iangle 90
+funckey ra rats all
+funckey rc rats component
+funckey rn rats net
+funckey RA rats all
+funckey RC rats component
+funckey RN rats net
+funckey ura unrats all
+funckey urc unrats component
+funckey urn unrats net
+funckey URA unrats all
+funckey URC unrats component
+funckey URN unrats net
+
+set roamInc = 96
+button Swheel_up      "roam x -$roamInc"
+button Swheel_down     "roam x $roamInc"+ h/ w) n9 U# q, s* z. S* g
+button Cwheel_up      "roam y -$roamInc"
+button Cwheel_down     "roam y $roamInc"
+
+
+funckey 'RE' 'reject'
+funckey 'rE' 'reject'
+funckey 're' 'reject'
+funckey 'Re' 'reject'
+funckey 'mm' 'place manual;setwindow form.plc_manual;FORM plc_manual hide'
+funckey 'nc' 'ncdrill customization;setwindow form.nc_drillcustomization;FORM nc_drillcustomization auto_symbols'
+funckey 'NC' 'ncdrill customization;setwindow form.nc_drillcustomization;FORM nc_drillcustomization auto_symbols'
+funckey 'ca' 'Cut_Area_Cline_Segs'
+funckey 'CA' 'Cut_Area_Cline_Segs'
+
+funckey m1 "replay grid0_1"
+funckey m5 "replay grid0_5"
+
+funckey rs "replay rsp"
+funckey rd "replay rdp"
+funckey rd5 "replay rdp165"
+funckey ru "replay rup"
+funckey rn "replay rns"
+funckey RS "replay rsp"
+funckey RD "replay rdp"
+funckey RU "replay rup"
+funckey RN "replay rns"
+funckey mp "replay move_pdf"
+funckey va "replay view_all_layer"
+funckey vn "replay view_none_layer"
+funckey vtc "replay view_top_CC"
+funckey vbc "replay view_bottom_CC"
+#About create package
+funckey mtb "replay define_mil_text_block"
+funckey at "replay add_text"
+funckey av "replay add_value"
+funckey cv "replay add_v_tag"
+funckey ap "replay add_placebound"
+funckey al "replay add_silkline"
+funckey dt "replay delete_text"
+funckey cd "replay create_device"
+funckey ds "replay dimension_set"
+funckey di "replay dimension_in"
+
+
+### User Preferences section
+### This section is computer generated.
+### Please do not modify to the end of the file.
+### Place your hand edits above this section.
+###
+set padpath = $padpath E:/Cadence/Therapy20150330/PCBLIB/psm/ D:/Cadence/Design/BreastTherapy/psm/ D:/Home/1115/ex/PACKAGE/
+set psmpath = $psmpath E:/Cadence/Therapy20150330/PCBLIB/psm/ D:/Cadence/Design/BreastTherapy/psm/ D:/Home/1115/ex/PACKAGE/
+set allegro_dynam_timing = on
+set etchedit_ignore_dynamic_shapes
+set allegro_etch_length_on
+set drawing_4mils
+set allegro_long_name_size = 255
+unset disable_opengl
+set no_dragpopup
+set display_drcfill
+set partition_suppress_email
+set pcb_cursor = cross
+set display_nohilitefont
+set logic_edit_enabled
+set autosave_time = 10
+set autosave_dbcheck
+set autosave
