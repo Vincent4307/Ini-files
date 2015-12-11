@@ -1,9 +1,12 @@
 [alias]
 	st = status
 	ci = commit
+	ca = commit -a -m
 	lg = log --graph --all --pretty=format:'%Cred%h%Creset-%C(yellow)%d%Creset %s%Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	co = checkout
 	br = branch
+	pl = pull
+    ps = push
 [push]
 	default = simple
 [core]
