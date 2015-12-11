@@ -1,0 +1,20 @@
+#Write by DZK grid setup
+
+scriptmode +invisible
+
+
+setwindow pcb
+trapsize 15382
+define grid
+setwindow form.grid
+FORM grid non_etch non_etch_x_grids 15
+FORM grid non_etch non_etch_y_grids 15 
+FORM grid non_etch non_etch_x_offset 0
+FORM grid non_etch non_etch_y_offset 0
+FORM grid all_etch all_etch_x_grids 15 15 15 15 15 
+FORM grid all_etch all_etch_y_grids 15 15 15 15 15 
+FORM grid all_etch all_etch_x_offset 0
+FORM grid all_etch all_etch_y_offset 0
+FORM grid display YES
+FORM grid done
+setwindow pcb

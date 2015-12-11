@@ -1,0 +1,38 @@
+# Allegro script
+#	file: E:/Design/Other/SiCong/TP7600/SPEC/111/add_txt.scr
+#	start time: Tue Jul 22 10:02:37 2008
+#	Version: 15.51 s078 (v15-5.1-43DK) i86
+scriptmode +invisible
+version 15.51
+setwindow pcb
+color 
+setwindow form.cvf_main
+FORM cvf_main class_list Geometry
+FORM cvf_main global_vis All Visible 
+fillin yes 
+FORM cvf_main ok  
+setwindow pcb
+label refdes 
+setwindow form.mini
+FORM mini class COMPONENT VALUE 
+FORM mini subclass SILKSCREEN_TOP 
+FORM mini text_block 1
+FORM mini text_justification Center 
+setwindow pcb
+pick 0.0000 0.0000
+text VALUE
+next 
+setwindow form.mini
+FORM mini class COMPONENT VALUE 
+FORM mini subclass ASSEMBLY_TOP 
+FORM mini text_block 1
+FORM mini text_justification Center 
+setwindow pcb
+pick 0.0000 0.0000
+text VALUE
+done 
+setwindow pcb
+save 
+fillin yes 
+
+#	stop time: Tue Jul 22 10:03:30 2008

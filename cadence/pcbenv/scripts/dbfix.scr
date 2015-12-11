@@ -1,0 +1,10 @@
+scriptmode +invisible
+version 16.3
+
+setwindow pcb
+dbdoctor 
+setwindow form.dbdoctor_allegro
+FORM dbdoctor_allegro drc YES 
+FORM dbdoctor_allegro shapes YES 
+FORM dbdoctor_allegro execute  
+FORM dbdoctor_allegro close  
