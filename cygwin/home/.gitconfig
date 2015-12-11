@@ -1,14 +1,15 @@
-[core]
-	quotepath = false
-[user]
-	name = Vincent4307
-	email = 3205027978@qq.com
-[color]
-	ui = true
 [alias]
 	st = status
 	ci = commit
+	lg = log --graph --all --pretty=format:'%Cred%h%Creset-%C(yellow)%d%Creset %s%Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	co = checkout
 	br = branch
 [push]
 	default = simple
+[core]
+	fileMode = false
+	quotepath = false
+	editor = vim
+	ignorecase = true
+[color]
+	ui = true
