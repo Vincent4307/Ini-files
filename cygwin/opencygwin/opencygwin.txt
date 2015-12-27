@@ -1,0 +1,14 @@
+1，右键启动opencygwin，并进入当前目录
+	1，更改注册表
+		1，HKEY_CLASSES_ROOT\Directory\Background\shell
+		2，右键点击shell，新建-项-opencygwin
+		3，在刚创建的opencygwin上右键，新建-项-command，默认值中输入cygwin的启动脚本
+	2，更改cygwin.bat
+	3，更改.bash_profile
+
+2，在cygwin中启动explorer打开当前目录
+	1，连接explorer
+		cygwin中输入
+		ln -s /cygdrive/c/windows/explorer usr/bin/open
+	2，如何使用
+		open .
