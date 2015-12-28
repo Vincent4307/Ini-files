@@ -5,6 +5,7 @@
 		3，在刚创建的opencygwin上右键，新建-项-command，默认值中输入cygwin的启动脚本
            如d:\cygwin\Cygwin.bat %V
         4，上一项中的%V不能省略
+        5，若将第2点中的opencygwin可以根据自己的喜好定义，比如‘cygwin，这样右键后按'就可启动
 	2，更改cygwin.bat
 	3，更改.bash_profile
 
