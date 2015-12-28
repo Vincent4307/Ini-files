@@ -12,3 +12,7 @@
 		ln -s /cygdrive/c/windows/explorer usr/bin/open
 	2，如何使用
 		open .
+	3，配置.bashrc
+        1，增加alias l.='open .'
+        2，source .bashrc
+        3，bash中输入l.将打开当前目录
