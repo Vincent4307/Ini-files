@@ -9,6 +9,7 @@
 	br = branch
 	pl = pull
 	ps = push
+	d = difftool
 [push]
 	default = simple
 [core]
@@ -19,5 +20,9 @@
 [color]
 	ui = true
 [user]
-	name = Vincent4307
-	email = 3205027978@qq.com
+	name = 
+	email = 
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
