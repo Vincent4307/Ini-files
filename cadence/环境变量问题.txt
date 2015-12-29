@@ -1,0 +1,5 @@
+安装modulesim时，一般会让软件自动添加环境变量，
+这时可能cadence就不能正常启动了。
+
+解决办法是：
+只保留系统环境变量中的modulesim路径，删除用户环境变量path中的modulesim路径
