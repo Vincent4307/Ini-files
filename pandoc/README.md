@@ -15,4 +15,6 @@ your-file-name.extension -o your-output-name.extension
 1. pandoc 
 --template=mybeamer.tex 
 --latex-engine=xelatex 
-your-file-name.extention -o your-output-name.extention
+-t beamer
+-o your-output-file-name.extention
+your-input-file-name.extention 
