@@ -1,3 +1,14 @@
+#安装pandoc
+1. cable
+1. pandoc
+1. .bashrc增加环境变量
+export PATH=/home/gitolite-admin/.cabal/bin:$PATH;
+
+此3项为texlive的环境变量
+export PATH=/usr/local/texlive/2015/bin/i386-linux:$PATH; 
+export MANPATH=/usr/local/texlive/2015/texmf-dist/doc/man:$MANPATH; 
+export MANPATH=/usr/local/texlive/2015/texmf-dist/doc/info:$INFOPATH; 
+
 #配置模板文件
 1. 将.pandoc复制到~文件夹
 
