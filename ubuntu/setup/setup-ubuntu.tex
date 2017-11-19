@@ -1,0 +1,34 @@
+\documentclass[UTF8]{ctexart}
+
+\usepackage{geometry}
+\geometry{a6paper,margin=0.2in}
+\begin{document}
+11.28
+\begin{enumerate}
+    \item
+        更改启动项
+        \begin{enumerate}
+            \item
+                sudo cp /etc/default/grub /etc/default/grub-backup
+            \item
+                sudo vi /etc/default/grub
+            \item
+                根据启动顺序，将grubdefault=4
+            \item
+                timeout=5，更改等待时间
+            \item
+                sudo update-gurb 
+                在这个过程中可以检查启动顺序是否正确，若win7出现在第5行，
+                则之前设为4，就是正确的
+            \item
+                重启生效 
+        \end{enumerate}
+    \item
+        修改主机名
+        \\ sudo vi /etc/hostnames
+        \\ sudo vi /etc/hosts
+        \\ 更改一致后重启
+    \item
+	xkboptions="ctrl:nocaps"
+\end{enumerate}
+\end{document}

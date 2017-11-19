@@ -1,0 +1,10 @@
+
+* 配置
+  - 将init.el文件和lisp文件夹拷贝到~/.emacs.d
+  - M-x list-packages 启动包管理器
+  - 根据需要，参考init.el中的插件名安装插件包
+  - C-s 插件名，确定后按I，然后按X开始安装
+  - 安装完成后，解除init.el文件中相关插件的init行
+ 
+* 关于字体设置
+  - 如果在windows下使用，应该修改init-set-fonts.el文件中的字体名称

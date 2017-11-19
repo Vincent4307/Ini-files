@@ -1,10 +1,12 @@
 #安装pandoc
+## 从源程序安装
 1. sudo apt-get install cabal-install
 1. cabal update
 1. cabal install pandoc
 1. .bashrc增加环境变量
 export PATH=/home/gitolite-admin/.cabal/bin:$PATH;
-
+## 直接安装
+1. sudo apt-get install pandoc
 
 #配置模板文件
 1. 将.pandoc复制到~文件夹

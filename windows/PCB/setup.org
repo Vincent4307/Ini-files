@@ -1,0 +1,44 @@
+
+#+STARTUP: indent
+
+* Cadence
+** 安装
+1. 安装license manager
+2. 安装主程序，指定home路径
+3. 复制licensemanager破解文件到licensemanager安装目录，运行破解文件
+4. 复制tools破解文件到spb16.6/tools目录下，运行破解文件
+5. 找到主机名称，生成license
+6. 运行licensemanager server，加载license
+7. 启动licensemanager clinet，添加环境变量
+8. 完成安装。
+
+** Hotfix
+1. 备份spb16.6文件夹，将其改名为spb-0
+2. 新建文件夹spb16.6
+3. copy component.dat到spb16.6
+4. 安装hotfix
+5. 复制tools破解文件，到spb16.6/tools中，运行破解
+6. 完成后将spb16.6中的内容复制并覆盖spb-0中的内容
+7. 补丁完成。
+8. 只需要打最新的补丁就行。
+
+** Library Builder
+1. 安装文件，目录设置在cadence安装目录
+2. 安装完成后，运行aleegocrackmaster
+3. 选择library builder的路径，点击破解
+4. 导入license，选择license.dat
+5. 完成。
+
+* Cam350
+** 安装
+1. 启动10.7 installer，选择cam350
+2. 开始安装，安装过程中指定破解的license
+3. 安装完成会提示license错误，不管
+4. 将破解文件夹中的license和dll文件复制到安装目录，替换原来的文件
+5. 安装完成。
+
+* SI9000
+** 安装
+1. 安装主程序
+2. 完成后，加载license，指定license路径为破解文件夹中的license
+3. 完成。
