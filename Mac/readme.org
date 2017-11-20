@@ -1,0 +1,43 @@
+
+#+STARTUP: indent
+
+* 安装macvim
+1. brew install macvim
+2. 设置PATH变量后，可以从terminal启动mvim
+	export PATH=$PATH:/Applications/MacVim.app/Contents/bin/
+3. 设置vimrc
+4. 设置字体
+
+* 配置gvim
+** vundle
+1. cp .vimrc ~/vimrc-bak
+2. mkdir -p ~/.vim/bundle
+3. cd ~/.vim/bundle 
+4. git clone git://github.com/gmarik/vundle ~/.vim/bundle/vundle
+5. vi vimrc-bak to comment some plugin to void errors
+6. cp vimrc-bak ~/.gvimrc
+7. macvim :BundleInstall
+** cscope
+1. brew install cscope
+2. 设置快捷键
+
+** ctags
+1. brew install ctags
+2. 更改vimrc中的ctags路径，应与实际相符
+
+* GNU Emacs
+1. rm /usr/bin/emacs
+2. rm -rf /usr/share/emacs
+3. brew install emacs --cocoa --srgb --with-x
+4. ln -s /usr/local/Cellar/emacs/24.3/Emacs.app /Applications/
+5. 配置从github下载
+
+* zsh
+1. brew install zsh
+2. git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+3. cp ./Ini-files/Mac/zshrc ~
+4. chsh -s /bin/zsh
+
+* 安装latex
+1. 下载mactex.pkg
+2. 安装

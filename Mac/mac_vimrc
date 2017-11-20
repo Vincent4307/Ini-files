@@ -1,0 +1,148 @@
+
+set nocompatible
+
+set guifont=DejaVu\ Sans\ Mono:h16
+" set guifont=Arial\ monospaced\ for\ SAP\ 13 
+"set lines=25
+syntax on
+set showcmd
+set laststatus=2
+set nocompatible
+
+set lines=40 columns=140
+
+set number
+set hlsearch
+
+
+set cursorline
+set tabstop=4 
+set softtabstop=4 
+set shiftwidth=4
+set autoindent
+set cindent
+
+
+set backspace=2
+
+set foldmethod=syntax
+
+inoremap jk <ESC>
+let mapleader=","
+" for savefiles
+nmap <leader>w :w<CR>
+" for edit .vimrc
+nmap <silent> <leader>ev :e $MYVIMRC<CR> 
+" for source .vimrc
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+" open file in a new tab
+nmap <leader>e :tabe<Space>
+" open file in current tab
+nmap <leader>r :e<Space>
+
+" swith between tab is gt or gT 
+
+
+colorscheme molokai
+
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'tomasr/molokai'
+Bundle 'vim-scripts/tComment'
+Bundle 'Lokaltog/vim-powerline'
+
+Bundle 'scrooloose/nerdtree'
+nmap <S-m> :NERDTreeToggle<cr>
+
+Bundle 'Valloric/YouCompleteMe'
+let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
+nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>gf :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
+
+Bundle 'taglist.vim'
+nmap <leader>t :TlistToggle<CR>
+" let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+let Tlist_Ctags_Cmd = '/usr/local/Cellar/ctags/5.8_1/bin/ctags'
+let Tlist_File_Fold_Auto_Close = 1
+let Tlist_Sort_Type = 'name'
+let Tlist_GainFocus_On_ToggleOpen = 1
+" let Tlist_Show_One_File=1
+let Tlist_WinWidt = 32
+let Tlist_Exit_OnlyWindow = 1
+let Tlist_Use_Right_Window=1
+" let Tlist_Use_Left_Window = 1
+
+Bundle 'DoxygenToolkit.vim'
+nmap <leader>d :Dox<CR>
+" let g:DoxygenToolkit_briefTag_pre="@Synopsis  " 
+let g:DoxygenToolkit_paramTag_pre="@Param " 
+let g:DoxygenToolkit_returnTag="@Returns   " 
+" let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------" 
+" let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------" 
+let g:DoxygenToolkit_authorName="HuangWen" 
+let g:DoxygenToolkit_licenseTag="My own license" 
+
+	if has("cscope")
+		set csprg=/usr/local/Cellar/cscope/15.8b/bin/cscope
+		set csto=0
+		set cst
+		set nocsverb
+		" add any database in current directory
+		if filereadable("cscope.out")
+		    cs add cscope.out
+		" else add database pointed to by environment
+		elseif $CSCOPE_DB != ""
+		    cs add $CSCOPE_DB
+		endif
+		set csverb
+	endif
+nnoremap <leader>gl :YcmCompleter GoToDeclaration<CR>
+
+" 0 or s: Find this C symbol
+" 1 or g: Find this definition
+" 2 or d: Find functions called by this function
+" 3 or c: Find functions calling this function
+" 4 or t: Find this text string
+" 6 or e: Find this egrep pattern
+" 7 or f: Find this file
+" 8 or i: Find files #including this file
+" 9 or a: Find places where this symbol is assigned a value
+
+nmap <leader>ca :cs add cscope.out<cr>
+nmap <leader>cs :cs find s <C-R>=expand("<cword>")<cr><cr>
+nmap <leader>cg :cs find g <C-R>=expand("<cword>")<cr><cr>
+nmap <leader>cc :cs find c <C-R>=expand("<cword>")<cr><cr>
+nmap <leader>ct :cs find t <C-R>=expand("<cword>")<cr><cr>
+nmap <leader>ce :cs find e <C-R>=expand("<cword>")<cr><cr>
+nmap <leader>cf :cs find f <C-R>=expand("<cfile>")<cr><cr>
+nmap <leader>ci :cs find i <C-R>=expand("<cfile>")<cr><cr>
+nmap <leader>cd :cs find d <C-R>=expand("<cword>")<cr><cr>
+
+
+
+"Bundle 'plasticboy/vim-markdown'
+"Bundle 'majutsushi/tagbar'
+"
+" Bundle 'ctrlpvim/ctrlp.vim'
+" let g:ctrlp_map = '<leader>p'
+" let g:ctrlp_cmd = 'CtrlP'
+" map <leader>f :CtrlPMRU<CR>
+" let g:ctrlp_custom_ignore = {
+"     \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
+"     \ 'file': '\v\.(exe|so|dll|zip|tar|tar.gz|pyc)$',
+"     \ }
+" let g:ctrlp_working_path_mode=0
+" let g:ctrlp_match_window_bottom=1
+" let g:ctrlp_max_height=15
+" let g:ctrlp_match_window_reversed=0
+" let g:ctrlp_mruf_max=500
+" let g:ctrlp_follow_symlinks=1
+
+
+filetype plugin indent on
