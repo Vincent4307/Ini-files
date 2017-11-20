@@ -9,6 +9,11 @@
 4. 设置字体
 
 * 配置gvim
+
+** vimrc
+1. .vimrc for vim
+2. .gvimrc for mvim
+
 ** vundle
 1. cp .vimrc ~/vimrc-bak
 2. mkdir -p ~/.vim/bundle
@@ -17,6 +22,7 @@
 5. vi vimrc-bak to comment some plugin to void errors
 6. cp vimrc-bak ~/.gvimrc
 7. macvim :BundleInstall
+
 ** cscope
 1. brew install cscope
 2. 设置快捷键
